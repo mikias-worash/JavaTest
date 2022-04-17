@@ -1,13 +1,9 @@
-/*
-    Testing method for testing AVL
-
-    Written by - Mikiyas Worash & Mihret Teshale
-*/
 #include <iostream>
 using namespace std;
 #include "AVL.cpp"
-#include<cstring>
-int main(){
+#include <cstring>
+int main()
+{
     AVL t;
     dicIndex d1, d2, d3, d4;
 
@@ -32,9 +28,9 @@ int main(){
     t.insert(d4);
 
     t.display();
-    cout<<t.isEmpty();
+    cout << t.isEmpty();
     t.~AVL();
-    cout<<endl;
+    cout << endl;
     t.display();
-    cout<<t.isEmpty();
+    cout << t.isEmpty();
 }
