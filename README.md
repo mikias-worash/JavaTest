@@ -24,11 +24,11 @@ The dictionary record is specified by the following structure
             char meaning[200];
         }
 
-- An index to dictionary file is specified by the following structure
+An index to dictionary file is specified by the following structure
 
-  struct dicIndex{
-  char word[50];
-  list posList;// list of position(references) of record on the file
-  }
+        struct dicIndex{
+            char word[50];
+            list posList;   // list of position(references) of record on the file
+        }
 
-  Where list is a single linked list with head and tail implementation
+            //  Where list is a single linked list with head and tail implementation
